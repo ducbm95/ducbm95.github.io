@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BDM Showcase</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="hover-min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Poppins:700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="velocity.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+		#home {
+		    background-image: url('home.jpg') !important;
+		    background-position: center !important;
+		    background-repeat: no-repeat !important;
+		    background-size: cover !important;
+		    position: relative;
+		}
+		#content_home {
+		    position:absolute;
+		    width:100%;
+		    height:inherit;
+		    background-color: rgba(0, 0, 0, 0.6);
+		    display:table;
+		}
+		.centerd {
+			display:table-cell;
+		    vertical-align:middle;
+		    text-align:center;
+		}
+		.centerd-bottom{
+		    position: absolute;
+		    bottom: 0;
+		    left: 50%;
+		    transform: translateX(-50%);
+		}
+		#content_home h2, h3 {
+			color: white;
+			font-size: 64px;
+			font-family: 'Poppins', sans-serif;
+		}
+		#bmd_page {
+			position: relative;
+		}
+		.bmd-section {
+			padding-top: 50px;
+		}
+		.indent-bottom {
+			margin-bottom: 30px;
+		}
+
+		/*setting navbar*/
+		.navbar {
+		    background-color: rgba(0, 0, 0, 0);
+		    border: 0;
+		    font-size: 16px !important;
+		    transition: background .5s linear;
+		    -webkit-transition: background .5s linear;
+		    -moz-transition: background .5s linear;
+		}
+		.navbar li a, .navbar .navbar-brand {
+		    color: #d5d5d5 !important;
+		}
+		.navbar-nav li a:hover {
+		    color: #fff !important;
+		}
+		.navbar-nav li.active a {
+		    color: #fff !important;
+		    background-color: transparent !important;
+		}
+		.navbar-nav li.active a:before {
+		    left: 0;
+		    right: 0;
+		}
+		.nav a {
+			font-family: 'Poppins', sans-serif;
+			font-size: 14px;
+			display: inline-block;
+		    padding: 10px 15px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		}
+		.nav a i {
+			font-size: 25px;
+			margin-top: -7px;
+		}
+
+		/* change hover effect */
+		.hvr-underline-from-center:before {
+		    left: 55%;
+		    right: 45%;
+		    background: #FFF;
+		    height: 3px;
+		    -webkit-transition-duration: .2s;
+		    transition-duration: .2s;
+		}
+
+		/* setting skip button */
+		#skip_btn a {
+			font-size: 50px;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		/* setting main button */
+		.centerd a {
+			display: block;
+			font-family: 'Poppins', sans-serif;
+			padding: 12px 30px;
+			margin-top: 15px;
+			width: 200px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+		}
+		.centerd a:hover {
+			text-decoration: none;
+		}
+		#mail_me {
+			float: right;
+		    color: #ffffff;
+		    border: 4px solid #ffffff;
+		}
+		#mail_me:hover {
+			color: #000000;
+		}
+		#open_my_cv {
+			color: #ffffff;
+			float: left;
+			background: #34495e;
+			padding: 16px 30px;
+		}
+		.hvr-fade:hover {
+			background: #ffffff;
+		}
+	</style>
+</head>
+<body id="bmd_page" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bmd_navbar">
+		         	<span class="icon-bar"></span>
+		         	<span class="icon-bar"></span>
+		         	<span class="icon-bar"></span>
+		        </button>
+		        <a class="navbar-brand" href="#home">BMD</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bmd_navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="hvr-underline-from-center" href="#home">Home</a></li>
+					<li><a class="hvr-underline-from-center" href="#about_me">About me</a></li>
+					<li><a class="hvr-underline-from-center" href="#">Archivement</a></li>
+					<li><a class="hvr-underline-from-center" href="#show_case">Showcase</a></li>
+					<li><a class="hvr-underline-from-center" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li><a class="hvr-underline-from-center" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="home">
+		<div id="content_home"  class="container">
+			<div class="centerd">
+				<h2>I am Minh Duc</h2>
+				<h3><span>I love CREATING something<br>INNOVATIVE!!!<span></h3>
+				<div class="row">
+					<div class="col-sm-6">
+						<a href="#" class="hvr-fade" id="mail_me">Mail Me</a>
+					</div>
+					<div class="col-sm-6">
+						<a href="#" class="hvr-bounce-to-bottom" id="open_my_cv">Open My CV</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="centerd-bottom" id="skip_btn">
+			<a href="#about_me"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+		</div>
+	</div>
+
+	<div id="about_me" class="bmd-section" style="height: 1000px;">
+		<h2>About Me</h2>
+	</div>
+
+	<div id="show_case" class="bmd-section" style="height: 1000px;">
+		<div class="container">
+			<h2>Showcase</h2>
+			<div class="row indent-bottom">
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+			</div>
+			<div class="row indent-bottom">
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+				<div class="col-md-4">
+					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		// resize home to full image screen
+		function resizeHomepage() {
+			var h = window.innerHeight
+				|| document.documentElement.clientHeight
+				|| document.body.clientHeight;
+			$('#home').height(h);
+		}
+
+		function smoothScrollToDiv() {
+  			$(".nav a, #skip_btn a, .navbar-brand").on('click', function(event) {
+			    if (this.hash !== "") {
+			    	event.preventDefault();
+			    	// hash is value of href
+		      		var hash = this.hash;
+					// $(hash).velocity("scroll", {
+					// 	duration: 500
+					// });
+					$('html, body').animate({
+				    		scrollTop: $(hash).offset().top
+				    	}, 500, function(){
+				        window.location.hash = hash;
+				    });
+    			}
+  			});
+  		}
+
+		$( document ).ready(function() {
+			resizeHomepage();
+			smoothScrollToDiv();
+		});
+
+		$( window ).resize(function() {
+			resizeHomepage();
+		});
+
+
+		// change background color navbar when scroll
+		$(document).scroll(function(){
+			var a = $("#about_me").offset().top;
+		    if($(this).scrollTop() > a - 1)
+		    {
+		       $('.navbar').css({"background": "rgba(0, 0, 0, 0.7)"});
+		    } else {
+		       $('.navbar').css({"background":"transparent"});
+		    }
+		});
+	</script>
+</body>
+</html>
