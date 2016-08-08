@@ -50,6 +50,15 @@
 		.indent-bottom {
 			margin-bottom: 30px;
 		}
+        .bmd-section h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            text-align: center;
+        }
+        .bmd-section hr {
+            margin: 20px 45%;
+            border: 1px solid #000;
+        }
 
 		/*setting navbar*/
 		.navbar {
@@ -90,7 +99,7 @@
 		/* change hover effect */
 		.hvr-underline-from-center:before {
 		    left: 55%;
-		    right: 45%;
+		    right: 55%;
 		    background: #FFF;
 		    height: 3px;
 		    -webkit-transition-duration: .2s;
@@ -134,6 +143,38 @@
 		.hvr-fade:hover {
 			background: #ffffff;
 		}
+
+        /* setting for timeline */
+        .timeline {
+        }
+        .timeline::before {
+            position: absolute;
+            left: 50%;
+            content: ' ';
+            display: block;
+            width: 4px;
+            height: 100%;
+            margin-left: -1px;
+            background: #A5A5A5;
+            border-radius: 5px;
+            z-index: 5;
+        }
+        .direction-right {
+            border: 1px solid #52E5AB;
+            width: 75%;
+            margin-left: 25px;
+            margin-top: 15px;
+            padding: 20px;
+        }
+        .direction-left {
+            border: 1px solid #52E5AB;
+            width: 75%;
+            margin-right: 25px;
+            margin-top: 15px;
+            padding: 20px;
+            float: right;
+            text-align: right;
+        }
 	</style>
 </head>
 <body id="bmd_page" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -151,10 +192,11 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="hvr-underline-from-center" href="#home">Home</a></li>
 					<li><a class="hvr-underline-from-center" href="#about_me">About me</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Archivement</a></li>
+					<li><a class="hvr-underline-from-center" href="#experience">Experience</a></li>
 					<li><a class="hvr-underline-from-center" href="#show_case">Showcase</a></li>
-					<li><a class="hvr-underline-from-center" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-					<li><a class="hvr-underline-from-center" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a class="hvr-underline-from-center" href="#journey">Journey</a></li>
+					<li><a class="hvr-underline-from-center" href="https://facebook.com/ducbui195"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li><a class="hvr-underline-from-center" href="https://github.com/ishy159"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -181,12 +223,39 @@
 	</div>
 
 	<div id="about_me" class="bmd-section" style="height: 1000px;">
-		<h2>About Me</h2>
+        <div class="container">
+            <h2>About Me</h2>
+            <hr>
+        </div>
 	</div>
 
-	<div id="show_case" class="bmd-section" style="height: 1000px;">
+    <div id="experience"  class="bmd-section" style="height: 1000px;">
+        <div class="container">
+            <h2>My Experience</h2>
+            <hr>
+            <div class="row timeline">
+                <div class="col-md-6 col-md-offset-6">
+                    <div class="direction-right">
+                        <h4>Working</h4>
+                        <h5>Position</h5>
+                        <p>This is a short description of my work.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="direction-left">
+                        <h4>Working</h4>
+                        <h5>Position</h5>
+                        <p>This is a short description of my work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="show_case" class="bmd-section">
 		<div class="container">
 			<h2>Showcase</h2>
+            <hr>
 			<div class="row indent-bottom">
 				<div class="col-md-4">
 					<img src="img1.jpg" class="img-responsive" alt="Cinque Terre">
@@ -211,6 +280,21 @@
 			</div>
 		</div>
 	</div>
+
+    <div id="journey" class="bmd-section" style="height: 1000px;">
+        <div class="container">
+            <h2>My Journey</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/evAo4JcI1q4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnguyentuananh871995%2Fvideos%2F610471282470254%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<script type="text/javascript">
 
