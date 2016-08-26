@@ -8,9 +8,16 @@
 	<script src="./jquery.min.js"></script>
 	<script src="./bootstrap.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Poppins:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script type="text/javascript" src="velocity.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="modernizr.js"></script>
 	<style type="text/css">
+        * {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+        }
+
 		#home {
 		    background-image: url('startup-hero-img-3.jpg') !important;
 		    background-position: center !important;
@@ -30,13 +37,13 @@
 		    vertical-align:middle;
 		    text-align:center;
 		}
-		.centerd-bottom{
+		.centerd-bottom {
 		    position: absolute;
 		    bottom: 0;
 		    left: 50%;
 		    transform: translateX(-50%);
 		}
-		#content_home h2, h3 {
+		#content_home h2, h3 span {
 			color: white;
 			font-size: 64px;
 			font-family: 'Poppins', sans-serif;
@@ -160,7 +167,7 @@
         /* setting text about me */
         #about_me h4 {
             font-family: 'Poppins', sans-serif;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         /* setting for progress */
@@ -189,6 +196,7 @@
             right: -20px;
             top: -16px;
             width: 30px;
+            font-size: 14px;
         }
 
         /* setting for timeline */
@@ -259,6 +267,15 @@
         .circle-right {
             right: -11px;
         }
+
+
+        /*setting for footer*/
+        #footer {
+            background: #000;
+            height: 120px;
+            margin-top: 100px;
+            color: #fff;
+        }
 	</style>
 </head>
 <body id="bmd_page" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -313,11 +330,15 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="me.JPG" class="img-responsive img-circle my-avatar">
+                    <h4 class="text-center" style="margin-top: 30px; font-size: 25px;">Bui Minh Duc</h4>
                     <h4 class="text-center">Junior Developer</h4>
                 </div>
                 <div class="col-md-8">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p style="padding: 0 30px;" class="text-justify">Ho Chi Minh City has gone by several different names during its history, reflecting settlement by different ethnic, cultural and political groups. In the 1690s, Nguyễn Hữu Cảnh, a Vietnamese noble, was sent by the Nguyễn rulers of Huế to establish Vietnamese administrative structures in the Mekong Delta and its surroundings. Control of the city and the area passed to the Vietnamese, who gave the city the official name of Gia Định...</p>
+                    <p style="padding: 0 30px;" class="text-justify">Hello, it's me, Duc. I'm studying in HCMC and I am 4th-student in there. My major is Computer Science and Engineering and I specialize in Computer Science.<br>
+                    So now that I have studied 4 years in there, I have studied a lot of interesting things. I learned how writing a program on computer on multiple language, learned to understand lots of Data Structure and Algorithm such as Sorting, List, BST, Searching..<br>
+                    I like to learn a new thing, something like a new program language, a new algorithm, so on. That makes me feel exited. I studied the way how to solve problem by myself, by asking another on the internet. This helps me improve my skills and develops myself.
+                    </p>
                     <i class="fa fa-quote-right" aria-hidden="true" style="float:right;"></i><br>
                     <div class="row" style="margin-top: 30px;">
                         <div class="col-md-6">
@@ -331,23 +352,7 @@
                         <div class="col-md-6">
                             <h4>My Skills</h4>
                             <div>
-                                <p>Java Web Development</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 85%;">
-                                        <span>85%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Java Web Development</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 75%;">
-                                        <span>75%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Java Web Development</p>
+                                <p>Data Structure and Algorithm</p>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 90%;">
                                         <span>90%</span>
@@ -355,7 +360,23 @@
                                 </div>
                             </div>
                             <div>
-                                <p>Java Web Development</p>
+                                <p>Android Development</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%;">
+                                        <span>85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Java Web Back-end Development</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Front-end Development</p>
                                 <div class="progress">
                                     <div class="progress-bar" style="width: 50%;">
                                         <span>50%</span>
@@ -386,16 +407,16 @@
                 <div class="col-md-6 timeline-block">
                     <span class="timeline-circle circle-right "></span>
                     <div class="direction-left circle-right">
-                        <h4><span>Quay Team</span><span class="time-period-left">Jan 2016 - Now</span></h4>
-                        <h5>Backend Developer</h5>
+                        <h4><span>HCMUT</span><span class="time-period-left">08/2013-Now</span></h4>
+                        <h5>Hard-working Student</h5>
                         <p>This is a short description of my work. This is a short description of my work.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-md-offset-6 timeline-block">
                     <span class="timeline-circle circle-left"></span>
                     <div class="direction-right">
-                        <h4><span>NTTData VietNam</span><span class="time-period-right">06/2016-08/2016</span></h4>
-                        <h5>Intern Software Programmer</h5>
+                        <h4><span>Quay Team</span><span class="time-period-right">06/2016-Now</span></h4>
+                        <h5>Backend Developer</h5>
                         <p>This is a short description of my work. This is a short description of my work.</p>
                     </div>
                 </div>
@@ -475,6 +496,14 @@ Gatlin, 34, banned twice for doping offences, clocked 20.13 and failed to progre
         </div>
     </div>
 
+    <div id="footer" class="bmd-section">
+        <div class="container">
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright BMD 2016</p>
+        </div>
+    </div>
+
+    <a href="#0" class="cd-top">Top</a>
+
 	<script type="text/javascript">
 
 		// resize home to full image screen
@@ -528,6 +557,35 @@ Gatlin, 34, banned twice for doping offences, clocked 20.13 and failed to progre
 		       $('.navbar').css({"background":"transparent"});
 		    }
 		});
+
+        jQuery(document).ready(function($){
+            // browser window scroll (in pixels) after which the "back to top" link is shown
+            var offset = 300,
+                //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                offset_opacity = 1200,
+                //duration of the top scrolling animation (in ms)
+                scroll_top_duration = 700,
+                //grab the "back to top" link
+                $back_to_top = $('.cd-top');
+
+            //hide or show the "back to top" link
+            $(window).scroll(function(){
+                ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if( $(this).scrollTop() > offset_opacity ) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+
+            //smooth scroll to top
+            $back_to_top.on('click', function(event){
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+                );
+            });
+
+        });
 	</script>
 </body>
 </html>
